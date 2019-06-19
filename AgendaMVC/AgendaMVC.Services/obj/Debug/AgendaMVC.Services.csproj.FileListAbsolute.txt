@@ -1,0 +1,11 @@
+C:\Projects\AgendaMVC\AgendaMVC.Services\bin\Debug\AgendaMVC.Services.dll
+C:\Projects\AgendaMVC\AgendaMVC.Services\bin\Debug\AgendaMVC.Services.pdb
+C:\Projects\AgendaMVC\AgendaMVC.Services\bin\Debug\AgendaMVC.ViewModel.dll
+C:\Projects\AgendaMVC\AgendaMVC.Services\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\AgendaMVC\AgendaMVC.Services\bin\Debug\AgendaMVC.ViewModel.pdb
+C:\Projects\AgendaMVC\AgendaMVC.Services\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\AgendaMVC\AgendaMVC.Services\obj\Debug\AgendaMVC.Services.csprojAssemblyReference.cache
+C:\Projects\AgendaMVC\AgendaMVC.Services\obj\Debug\AgendaMVC.Services.csproj.CoreCompileInputs.cache
+C:\Projects\AgendaMVC\AgendaMVC.Services\obj\Debug\AgendaMVC.Services.csproj.CopyComplete
+C:\Projects\AgendaMVC\AgendaMVC.Services\obj\Debug\AgendaMVC.Services.dll
+C:\Projects\AgendaMVC\AgendaMVC.Services\obj\Debug\AgendaMVC.Services.pdb

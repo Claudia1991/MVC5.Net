@@ -1,0 +1,6 @@
+C:\Projects\AgendaMVC\AgendaMVC.ViewModel\bin\Debug\AgendaMVC.ViewModel.dll
+C:\Projects\AgendaMVC\AgendaMVC.ViewModel\bin\Debug\AgendaMVC.ViewModel.pdb
+C:\Projects\AgendaMVC\AgendaMVC.ViewModel\obj\Debug\AgendaMVC.Models.csprojAssemblyReference.cache
+C:\Projects\AgendaMVC\AgendaMVC.ViewModel\obj\Debug\AgendaMVC.Models.csproj.CoreCompileInputs.cache
+C:\Projects\AgendaMVC\AgendaMVC.ViewModel\obj\Debug\AgendaMVC.ViewModel.dll
+C:\Projects\AgendaMVC\AgendaMVC.ViewModel\obj\Debug\AgendaMVC.ViewModel.pdb

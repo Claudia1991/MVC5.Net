@@ -1,0 +1,33 @@
+﻿
+
+@model  List<AgendaMVC.Models.ViewModel.ContactoViewModel>
+
+@{
+    ViewBag.Title = "Agenda";
+}
+
+<h2>Agenda - Detalle</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Telefono</td>
+            <td>Mail</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.NombreContacto</td>
+                <td>@item.ApellidoContacto</td>
+                <td>@item.TelefonoContacto</td>
+                <td>@item.MailContacto</td>
+            </tr>
+        }
+    </tbody>
+</table>
