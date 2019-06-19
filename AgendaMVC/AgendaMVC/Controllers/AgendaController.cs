@@ -7,7 +7,7 @@ namespace AgendaMVC.Controllers
     public class AgendaController : Controller
     {
         // GET: Agenda
-        public ActionResult Index()
+        public ActionResult Detalle()
         {
             //Trae todo el listado de los contactos.
             AgendaService agendaService = new AgendaService();
