@@ -121,6 +121,11 @@
     <Content Include="Views\Agenda\Detalle.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Agenda\Agregar.cshtml" />
+    <Content Include="Views\Agenda\Eliminar.cshtml" />
+    <Content Include="Views\Agenda\Editar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

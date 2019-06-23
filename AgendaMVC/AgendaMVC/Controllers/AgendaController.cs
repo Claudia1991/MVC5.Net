@@ -6,7 +6,6 @@ namespace AgendaMVC.Controllers
 {
     public class AgendaController : Controller
     {
-        // GET: Agenda
         public ActionResult Detalle()
         {
             //Trae todo el listado de los contactos.
@@ -14,6 +13,18 @@ namespace AgendaMVC.Controllers
             var model = agendaService.GetList();
 
             return View(model);
+        }
+        public ActionResult Agregar()
+        {
+            return View();
+        }
+        public ActionResult Eliminar()
+        {
+            return View();
+        }
+        public ActionResult Editar()
+        {
+            return View();
         }
 
     }
