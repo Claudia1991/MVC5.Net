@@ -1,9 +1,7 @@
-﻿
-
-@model  List<AgendaMVC.Models.ViewModel.ContactoViewModel>
+﻿@model  List<AgendaMVC.Models.ViewModel.ContactoViewModel>
 
 @{
-    ViewBag.Title = "Agenda";
+    ViewBag.Title = "Agenda - Detalle De Contactos.";
 }
 
 <h2>Agenda - Detalle</h2>
@@ -16,18 +14,22 @@
             <td>Apellido</td>
             <td>Telefono</td>
             <td>Mail</td>
+            <td>Eliminar</td>
+            <td>Editar</td>
         </tr>
     </thead>
     <tbody>
         @foreach(var item in Model)
         {
-            <tr>
-                <td>@item.Id</td>
-                <td>@item.NombreContacto</td>
-                <td>@item.ApellidoContacto</td>
-                <td>@item.TelefonoContacto</td>
-                <td>@item.MailContacto</td>
-            </tr>
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.NombreContacto</td>
+            <td>@item.ApellidoContacto</td>
+            <td>@item.TelefonoContacto</td>
+            <td>@item.MailContacto</td>
+            <td>@Html.ActionLink("Eliminar", "Eliminar", "Agenda", null, new { @class = "navbar-brand" })</td>
+            <td>@Html.ActionLink("Editar", "Editar", "Agenda", null, new { @class = "navbar-brand" })</td>
+        </tr>
         }
     </tbody>
 </table>

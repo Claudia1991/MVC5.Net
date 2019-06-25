@@ -13,15 +13,21 @@ namespace AgendaMVC.Services.Services
         #region Public Methods
         public List<ContactoViewModel> GetList()
         {
-            List<ContactoViewModel> contactos = null;
-            HttpWebResponse httpWebResponse = base.ExecuteMethod("GET", ConfigurationManager.AppSettings["GetAllUrlWebApi"], "");
-            if(httpWebResponse.StatusCode == HttpStatusCode.OK)
+            try
             {
-                //Aca se deserializa el asunto
-                contactos = DeserializeApiResponse<List<ContactoViewModel>>(httpWebResponse);
+                List<ContactoViewModel> contactos = null;
+                HttpWebResponse httpWebResponse = base.ExecuteMethod("GET", ConfigurationManager.AppSettings["GetAllUrlWebApi"], "");
+                if (httpWebResponse.StatusCode == HttpStatusCode.OK)
+                {
+                    contactos = DeserializeApiResponse<List<ContactoViewModel>>(httpWebResponse);
+                    return contactos;
+                }
                 return contactos;
             }
-            return contactos;
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
         }
         #endregion
 

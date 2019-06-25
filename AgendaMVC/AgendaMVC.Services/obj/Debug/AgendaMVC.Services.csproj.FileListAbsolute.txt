@@ -9,3 +9,14 @@ C:\Projects\AgendaMVC\AgendaMVC.Services\obj\Debug\AgendaMVC.Services.csproj.Cor
 C:\Projects\AgendaMVC\AgendaMVC.Services\obj\Debug\AgendaMVC.Services.csproj.CopyComplete
 C:\Projects\AgendaMVC\AgendaMVC.Services\obj\Debug\AgendaMVC.Services.dll
 C:\Projects\AgendaMVC\AgendaMVC.Services\obj\Debug\AgendaMVC.Services.pdb
+C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.Services\bin\Debug\AgendaMVC.Services.dll
+C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.Services\bin\Debug\AgendaMVC.Services.pdb
+C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.Services\bin\Debug\AgendaMVC.ViewModel.dll
+C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.Services\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.Services\bin\Debug\AgendaMVC.ViewModel.pdb
+C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.Services\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.Services\obj\Debug\AgendaMVC.Services.csprojAssemblyReference.cache
+C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.Services\obj\Debug\AgendaMVC.Services.csproj.CoreCompileInputs.cache
+C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.Services\obj\Debug\AgendaMVC.Services.csproj.CopyComplete
+C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.Services\obj\Debug\AgendaMVC.Services.dll
+C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.Services\obj\Debug\AgendaMVC.Services.pdb

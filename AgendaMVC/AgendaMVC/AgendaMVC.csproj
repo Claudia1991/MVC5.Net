@@ -126,6 +126,7 @@
     <Content Include="Views\Agenda\Agregar.cshtml" />
     <Content Include="Views\Agenda\Eliminar.cshtml" />
     <Content Include="Views\Agenda\Editar.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
