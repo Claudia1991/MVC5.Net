@@ -26,8 +26,34 @@ namespace AgendaMVC.Controllers
         {
             return View();
         }
-        public ActionResult Eliminar()
+        [HttpPost]
+        public ActionResult AgregarContacto(ContactoViewModel contactoViewModel)
         {
+            try
+            {
+                AgendaService agendaService = new AgendaService();
+                var model = agendaService.Add(ParseContacto(contactoViewModel));
+                return RedirectToAction("Detalle", "Agenda");
+            }
+            catch (System.Exception)
+            {
+                return View("Error");
+            }
+        }
+        public ActionResult Eliminar(int? id)
+        {
+            try
+            {
+                if (id == null)
+                {
+                    return View("Error");
+                }
+            }
+            catch (System.Exception)
+            {
+
+                throw;
+            }
             return View();
         }
         public ActionResult Editar()
@@ -37,10 +63,15 @@ namespace AgendaMVC.Controllers
         #endregion
 
         #region Private Methods
-        private bool AgregarContacto(ContactoViewModel contactoViewModel)
+        private ContactoServiceModel ParseContacto(ContactoViewModel contactoViewModel)
         {
-            //aca se parsea con el contacto service model y se lo pasa como json a la weapi we.
-            return true;
+            return new ContactoServiceModel()
+            {
+                NombreContacto=contactoViewModel.NombreContacto,
+                ApellidoContacto=contactoViewModel.ApellidoContacto,
+                TelefonoContacto=contactoViewModel.TelefonoContacto,
+                MailContacto=contactoViewModel.MailContacto
+            };
         }
         #endregion
     }

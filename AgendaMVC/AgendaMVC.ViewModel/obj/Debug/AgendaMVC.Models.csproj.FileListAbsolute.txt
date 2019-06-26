@@ -9,3 +9,4 @@ C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.ViewModel\bin\Debug\AgendaMVC.ViewModel
 C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.ViewModel\obj\Debug\AgendaMVC.Models.csproj.CoreCompileInputs.cache
 C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.ViewModel\obj\Debug\AgendaMVC.ViewModel.dll
 C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.ViewModel\obj\Debug\AgendaMVC.ViewModel.pdb
+C:\Projects\MVC5.Net\AgendaMVC\AgendaMVC.ViewModel\obj\Debug\AgendaMVC.Models.csprojAssemblyReference.cache

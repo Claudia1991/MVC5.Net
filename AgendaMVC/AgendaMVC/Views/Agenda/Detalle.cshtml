@@ -27,8 +27,8 @@
             <td>@item.ApellidoContacto</td>
             <td>@item.TelefonoContacto</td>
             <td>@item.MailContacto</td>
-            <td>@Html.ActionLink("Eliminar", "Eliminar", "Agenda", null, new { @class = "navbar-brand" })</td>
-            <td>@Html.ActionLink("Editar", "Editar", "Agenda", null, new { @class = "navbar-brand" })</td>
+            <td>@Html.ActionLink("Eliminar", "Eliminar", "Agenda", new {Id=item.Id }, new { @class = "navbar-brand" })</td>
+            <td>@Html.ActionLink("Editar", "Editar", "Agenda", new { }, new { @class = "navbar-brand" })</td>
         </tr>
         }
     </tbody>

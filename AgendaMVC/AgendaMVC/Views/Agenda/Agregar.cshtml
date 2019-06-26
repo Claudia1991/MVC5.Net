@@ -1,5 +1,28 @@
-﻿@{
+﻿@model AgendaMVC.Models.ViewModel.ContactoViewModel
+
+@{
     ViewBag.Title = "Agregar Contacto";
 }
 <h2>Agregar Contacto</h2>
 
+@using (Html.BeginForm("AgregarContacto","Agenda"))
+{
+    <div class="form-group">
+        @Html.LabelFor(Model => Model.NombreContacto)
+        @Html.EditorFor(Model => Model.NombreContacto)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(Model => Model.ApellidoContacto)
+        @Html.EditorFor(Model => Model.ApellidoContacto)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(Model => Model.TelefonoContacto)
+        @Html.EditorFor(Model => Model.TelefonoContacto)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(Model => Model.MailContacto)
+        @Html.EditorFor(Model => Model.MailContacto)
+    </div>
+
+    <input type="submit" value="Agregar Contacto" class="btn btn-success"/>
+}
