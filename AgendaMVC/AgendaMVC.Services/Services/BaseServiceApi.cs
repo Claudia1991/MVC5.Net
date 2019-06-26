@@ -60,7 +60,7 @@ namespace AgendaMVC.Services.Services
             if (method.ToUpper() == "DELETE" && !string.IsNullOrEmpty(request))
             {
                 byte[] requestBytes = Encoding.ASCII.GetBytes(request);
-                HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(ConfigurationManager.AppSettings["BaseUrlWebApi"] + uri);
+                HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(ConfigurationManager.AppSettings["BaseUrlWebApi"] + uri + request);
                 httpWebRequest.Method = method;
                 httpWebResponse = (HttpWebResponse)httpWebRequest.GetResponse();
             }
