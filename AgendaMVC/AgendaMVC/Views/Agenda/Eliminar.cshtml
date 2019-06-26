@@ -7,10 +7,9 @@
 <div class="container">
     <div class="row">
         <div class="col-sm">
-            <span>Esta seguro que desea eliminar el contacto?</span>
-            <button type="button" class="btn btn-primary">Borrar</button>
-            <button type="button" class="btn btn-danger">Cancelar</button>
-            <!--Faltan las acciones de los botones de borrar o cancelar-->
+            <span>Esta seguro que desea eliminar el contacto de id @ViewBag.Id?</span>
+            @Html.ActionLink("Borrar", "EliminarContacto", new { Id = ViewBag.Id }, new { @class = "btn btn-danger" })
+            @Html.ActionLink("Cancelar", "Index", "Home", null, new { @class = "btn btn-primary" })
         </div>
     </div>
 </div>

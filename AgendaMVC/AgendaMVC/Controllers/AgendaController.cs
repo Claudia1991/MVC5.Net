@@ -54,11 +54,39 @@ namespace AgendaMVC.Controllers
 
                 throw;
             }
+            ViewBag.Id = id;
             return View();
         }
-        public ActionResult Editar()
+        public ActionResult Editar(ContactoViewModel contactoViewModel)
         {
-            return View();
+            return View(contactoViewModel);
+        }
+        [HttpPost]
+        public ActionResult EditarContacto(ContactoViewModel contactoViewModel)
+        {
+            try
+            {
+                AgendaService agendaService = new AgendaService();
+                var model = agendaService.Update(ParseContacto(contactoViewModel));
+                return RedirectToAction("Detalle", "Agenda");
+            }
+            catch (System.Exception)
+            {
+                return View("Error");
+            }
+        }
+        public ActionResult EliminarContacto(int id)
+        {
+            try
+            {
+                AgendaService agendaService = new AgendaService();
+                var model = agendaService.Delete(id);
+                return RedirectToAction("Detalle", "Agenda");
+            }
+            catch (System.Exception)
+            {
+                return View("Error");
+            }
         }
         #endregion
 
@@ -67,6 +95,7 @@ namespace AgendaMVC.Controllers
         {
             return new ContactoServiceModel()
             {
+                Id = contactoViewModel.Id,
                 NombreContacto=contactoViewModel.NombreContacto,
                 ApellidoContacto=contactoViewModel.ApellidoContacto,
                 TelefonoContacto=contactoViewModel.TelefonoContacto,

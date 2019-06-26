@@ -2,7 +2,7 @@
 {
     public class ContactoServiceModel
     {
-        public int IdContacto { get; set; }
+        public int Id { get; set; }
 
         public string NombreContacto { get; set; }
 

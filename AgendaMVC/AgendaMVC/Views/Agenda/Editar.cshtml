@@ -1,8 +1,33 @@
-﻿
+﻿@model AgendaMVC.Models.ViewModel.ContactoViewModel
 @{
     ViewBag.Title = "Editar Contacto";
 }
 
 <h2>Editar</h2>
 
-@Html.Editor("Contacto")
+@using (Html.BeginForm("EditarContacto", "Agenda"))
+{
+    @Html.HiddenFor(Model => Model.Id)
+    <div class="form-group disabled">
+        @Html.LabelFor(Model => Model.Id)
+        @Html.EditorFor(Model => Model.Id).
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(Model => Model.NombreContacto)
+        @Html.EditorFor(Model => Model.NombreContacto)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(Model => Model.ApellidoContacto)
+        @Html.EditorFor(Model => Model.ApellidoContacto)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(Model => Model.TelefonoContacto)
+        @Html.EditorFor(Model => Model.TelefonoContacto)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(Model => Model.MailContacto)
+        @Html.EditorFor(Model => Model.MailContacto)
+    </div>
+
+    <input type="submit" value="Guardar Contacto" class="btn btn-success" />
+}

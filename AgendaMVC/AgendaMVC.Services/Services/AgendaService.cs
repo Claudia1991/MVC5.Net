@@ -30,7 +30,7 @@ namespace AgendaMVC.Services.Services
                 throw ex;
             }
         }
-        //Delete
+        //Delete =>Verificar que funcione
         public bool Delete(int idContacto)
         {
             bool deleted = false;
@@ -60,6 +60,24 @@ namespace AgendaMVC.Services.Services
                     return !added;
                 }
                 return added;
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public bool Update(ContactoServiceModel contactoServiceModel)
+        {
+            bool update = false;
+            try
+            {
+                HttpWebResponse httpWebResponse = base.ExecuteMethod("PUT", ConfigurationManager.AppSettings["UpdateUrlWebApi"], SerializeObjectToJson(contactoServiceModel));
+                if (httpWebResponse.StatusCode == HttpStatusCode.OK)
+                {
+                    return !update;
+                }
+                return update;
             }
             catch (System.Exception ex)
             {
